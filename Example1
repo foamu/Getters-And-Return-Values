@@ -1,0 +1,36 @@
+class Dog {
+	
+	String breedName;
+	String name;
+	int age;
+
+	String getBreed() {
+		return breedName;
+	}
+	
+	String getName() {
+		return name;
+	}
+	
+	int getAge() {
+		return age;
+	}
+}
+public class GettersAndReturnValues {
+
+	public static void main(String[] args) {
+
+		Dog dog1 = new Dog();
+		dog1.breedName = "Doberman";
+		dog1.name = "Bastiat";
+		dog1.age = 3;
+		
+		String breed = dog1.getBreed();
+		String name = dog1.getName();
+		int age = dog1.getAge();
+		
+		System.out.println("Dog breed is: " + breed + ". Dog name is: " + name + ". Dog age is: " + age + ".");
+		
+	}
+
+}
