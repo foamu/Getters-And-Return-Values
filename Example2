@@ -1,0 +1,41 @@
+class Company {
+
+	String companyName;
+
+	String getCompanyName() {
+		return companyName;
+	}
+
+}
+
+public class GettersAndReturnValues2 {
+
+	public static void main(String[] args) {
+
+		Company company1 = new Company();
+		Company company2 = new Company();
+		Company company3 = new Company();
+		Company company4 = new Company();
+		Company company5 = new Company();
+
+		company1.companyName = "Swansin";
+		company2.companyName = "Nisam";
+		company3.companyName = "Eljor";
+		company4.companyName = "Palka";
+		company5.companyName = "Besq";
+
+		String companyName1 = company1.getCompanyName();
+		String companyName2 = company2.getCompanyName();
+		String companyName3 = company3.getCompanyName();
+		String companyName4 = company4.getCompanyName();
+		String companyName5 = company5.getCompanyName();
+
+		String[] companies = { companyName1, companyName2, companyName3, companyName4, companyName5 };
+
+		for (String names : companies) {
+			System.out.println(names.toString());
+		}
+
+	}
+
+}
